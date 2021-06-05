@@ -1,0 +1,102 @@
+@import 'mixins/mixins';
+@import 'common/var';
+
+@include b(form) {
+  &.el-form {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(24, 1fr);
+    &--label-top {
+      .el-form {
+        &-item {
+          flex-direction: column;
+          &__label {
+            padding-bottom: 0;
+          }
+          &__content {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @include e(driver) {
+    @for $span from 1 to 25 {
+      &.span__#{$span} {
+        grid-column-start: span #{$span}
+      }
+    }
+  }
+
+  .el-form-item {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    grid-column-start: span 24;
+    margin-bottom: 0;
+
+    @for $span from 1 to 25 {
+      &.span__#{$span} {
+        grid-column-start: span #{$span}
+      }
+    }
+
+    &__content {
+      flex: 1;
+      display: flex;
+      min-height: 32px;
+      align-items: center;
+      > div {
+        &:not(.h-form--item__group):not(.el-input-group):not(.el-switch) {
+          flex: 1;
+          display: flex;
+          align-items: center;
+        }
+      }
+      > .el-date-editor--daterange {
+        width: 100%;
+      }
+    }
+
+    &__label {
+      padding-right: 0;
+    }
+
+    &:not(.el-form-btns) {
+      >.el-form-item__content {
+        margin-left: initial !important;
+      }
+    }
+  }
+  .h-form--item {
+    &__label {
+      display: inline-flex;
+      align-items: center;
+      &-tooltip {
+        color: #666;
+        transform: rotate(180deg);
+        margin: 0 4px;
+      }
+    }
+    &__group {
+      width: 100%;
+      display: grid;
+      grid-gap: 8px;
+      grid-template-columns: repeat(24, 1fr);
+    }
+    &__text {
+      color: #666;
+    }
+    &__input {
+      &-sel {
+        background-color: #fff;
+        margin: -5px -20px;
+        height: 30px;
+      }
+    }
+  }
+  .el-form-btns {
+    margin-top: 20px;
+  }
+}
