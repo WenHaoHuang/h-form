@@ -1,3 +1,14 @@
+### [0.0.3](https://github.com/WenHaoHuang/form/compare/v0.0.2...v0.0.3)
+
+_2021-06-06_
+
+#### 优化
+
+##### 组件
+- 优化可不配置label([4e53e03](https://github.com/WenHaoHuang/form/commit/4e53e03))
+
+
+
 ### [0.0.2](https://github.com/WenHaoHuang/form/compare/v0.0.1...v0.0.2)
 
 _2021-06-06_
