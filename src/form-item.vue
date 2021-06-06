@@ -2,7 +2,7 @@
  * @Author       : wenhao.huang
  * @Date         : 2020-06-16 11:43:42
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-06-06 01:10:48
+ * @LastEditTime: 2021-06-06 10:21:41
 -->
 <template>
   <el-form-item
@@ -205,10 +205,6 @@ export default {
       type: Boolean,
       default: undefined
     },
-    hasLabel: {
-      type: Boolean,
-      default: true
-    },
     visible: {
       type: [Boolean, Function],
       default: undefined
@@ -236,6 +232,9 @@ export default {
       } else {
         return this.disabled
       }
+    },
+    hasLabel() {
+      return this.options.label || this.options.tooltip
     }
   },
 }
