@@ -156,7 +156,7 @@ export default {
           const __required = (this.rules ? (this.rules[item] || []) : []).find(v=>v.required === true)
           _width += required || _required || __required ? 1 : 0
           _width += tooltip ? 2 : 0
-          _width += label.length
+          _width += label ? label.length : 0
           labelWidth = _width > labelWidth ? _width : labelWidth;
         }
         return `${labelWidth}em`;
