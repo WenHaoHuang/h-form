@@ -2,7 +2,7 @@
  * @Author       : wenhao.huang
  * @Date         : 2020-06-16 11:43:42
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-06-06 10:21:41
+ * @LastEditTime: 2021-06-06 10:38:40
 -->
 <template>
   <el-form-item
@@ -18,10 +18,7 @@
       }
     ]"
   >
-    <template
-      v-if="hasLabel"
-      #label
-    >
+    <template #label>
       <div class="h-form--item__label">
         <span>{{ options.label }}</span>
         <el-tooltip
@@ -38,7 +35,7 @@
           <!-- eslint-enable -->
           <i class="el-icon-warning-outline h-form--item__label-tooltip" />
         </el-tooltip>
-        <span>：</span>
+        <span v-if="hasLabel">：</span>
       </div>
     </template>
     <template v-if="options.type === 'checkbox-group'">
