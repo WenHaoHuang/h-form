@@ -1,3 +1,14 @@
+### [0.0.4](https://github.com/WenHaoHuang/form/compare/v0.0.3...v0.0.4)
+
+_2021-06-06_
+
+#### 优化
+
+##### 组件
+- 优化label的配置([971e0ee](https://github.com/WenHaoHuang/form/commit/971e0ee))
+
+
+
 ### [0.0.3](https://github.com/WenHaoHuang/form/compare/v0.0.2...v0.0.3)
 
 _2021-06-06_
