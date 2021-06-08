@@ -165,7 +165,7 @@ export default {
   },
   methods: {
     onSubmit() {
-      this.$emit("on-submit");
+      this.$emit("on-submit", this.model);
     },
     onCancel() {
       this.$emit("on-cancel");
