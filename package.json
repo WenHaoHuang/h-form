@@ -1,6 +1,6 @@
 {
   "name": "@hg-ui/form",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "基于element-ui的表单组件",
   "main": "lib/index.js",
   "files": [
