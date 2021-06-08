@@ -1,3 +1,14 @@
+### [0.0.5](https://github.com/WenHaoHuang/form/compare/v0.0.4...v0.0.5)
+
+_2021-06-08_
+
+#### 优化
+
+##### 组件
+- 提交操作增加内容输出([6ed40f6](https://github.com/WenHaoHuang/form/commit/6ed40f6))
+
+
+
 ### [0.0.4](https://github.com/WenHaoHuang/form/compare/v0.0.3...v0.0.4)
 
 _2021-06-06_
