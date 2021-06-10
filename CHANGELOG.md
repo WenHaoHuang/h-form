@@ -1,3 +1,14 @@
+### [0.0.6](https://github.com/WenHaoHuang/form/compare/v0.0.5...v0.0.6)
+
+_2021-06-10_
+
+#### 优化
+
+##### 组件
+- label展示逻辑优化([36281b2](https://github.com/WenHaoHuang/form/commit/36281b2))
+
+
+
 ### [0.0.5](https://github.com/WenHaoHuang/form/compare/v0.0.4...v0.0.5)
 
 _2021-06-08_
